@@ -16,10 +16,10 @@ fn main() {
     println!("el valor de shadow numb es : {}", shadow_num);
     let boolean: bool = true;
     let title: &str = "string hola";
-    let stringChar = 'a';
-    let stringChar2: char = 'b';
-    println!("{}", stringChar);
-    println!(" el char2 es {}", stringChar2);
+    let stringchar = 'a';
+    let string_char2: char = 'b';
+    println!("{}", stringchar);
+    println!(" el char2 es {}", string_char2);
 
     // tuplas
     // las tuplas en rust son inmutables  y no se pueden agregar o eliminar elementos
@@ -29,15 +29,15 @@ fn main() {
     // structs
    struct Persona {nombre: String, edad: u8, github: String, remote: bool}
    // tuple struct
-   struct Hobbies(String, String, String);
+   //struct Hobbies(String, String, String);
    let persona: Persona = Persona {
        nombre: String::from("Alejandro"),
        edad: 22,
        github: String::from("Vant3x"),
        remote: true
-   }
+   };
 
-   println!("{}", persona.nombre);
+   println!("Persona {}, con edad {}", persona.nombre, persona.edad);
 
 
 }
